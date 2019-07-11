@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+  vuejs:
+    build:
+      context: ./simple-login-project
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+  express:
+    build:
+      context: ./express-api
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
