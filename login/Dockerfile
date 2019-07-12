@@ -1,5 +1,8 @@
 # Check out https://hub.docker.com/_/node to select a new base image
 FROM node:10-slim
+ENV HTTP_PROXY "http://nl-userproxy-access.net.abnamro.com:8080"
+ENV HTTPS_PROXY "http://nl-userproxy-access.net.abnamro.com:8080"
+
 
 # Set to a non-root built-in user `node`
 USER node
