@@ -9,7 +9,7 @@ services:
       - 8080:8080
   express:
     build:
-      context: ./express-api
+      context: ./login
       dockerfile: Dockerfile
     ports:
-      - 5000:5000
+      - 5000:3000
