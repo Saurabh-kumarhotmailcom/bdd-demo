@@ -14,4 +14,3 @@ Scenario: Login Failed with invalid credentials
   And I fill in "Password" with "abc"
   And I press "Login"
   Then I should see message "Username and Password incorrect"
-

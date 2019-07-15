@@ -3,7 +3,7 @@ version: '2.1'
 services:
   vuejs:
     build:
-      context: ./simple-login-project
+      context: ./simple-login
       dockerfile: Dockerfile
     ports:
       - 8080:8080
